@@ -81,10 +81,10 @@ jobs:
       #     copy-item libopencv_core451.dll, libopencv_imgcodecs451.dll, libopencv_imgproc451.dll, libopencv_videoio451.dll, opencv_videoio_ffmpeg451_64.dll $env:GITHUB_WORKSPACE\release
       #     windeployqt --qmldir $env:GITHUB_WORKSPACE $env:GITHUB_WORKSPACE\release
 
-      - name: Cleanup for packaging
-        run: |
-          cd release
-          Remove-Item -Recurse -Force audio, bearer, iconengines, mediaservice, playlistformats, qmltooling, QtGraphicalEffects, styles, translations, D3Dcompiler_47.dll, opengl32sw.dll, libGLESv2.dll
+      # - name: Cleanup for packaging
+      #   run: |
+      #     cd release
+      #     Remove-Item -Recurse -Force audio, bearer, iconengines, mediaservice, playlistformats, qmltooling, QtGraphicalEffects, styles, translations, D3Dcompiler_47.dll, opengl32sw.dll, libGLESv2.dll
 
       - name: Create Release Archive
         run: |
