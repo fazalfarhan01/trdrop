@@ -54,10 +54,10 @@ public:
             if (_export_options_model->export_as_imagesequence())
             {
                 QString filepath = _create_image_file_path();
-                QImageWriter writer(filepath);
-                writer.setCompression(1); // use compression for tiff+jpeg
-                writer.setOptimizedWrite(true);
-                writer.write(image);
+                // QImageWriter writer(filepath);
+                // writer.setCompression(1); // use compression for tiff+jpeg
+                // writer.setOptimizedWrite(true);
+                // writer.write(image);
             }
             if (_export_options_model->export_csv())
             {
